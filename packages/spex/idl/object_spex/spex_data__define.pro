@@ -62,6 +62,7 @@
 ; 29-nov-2017, Richard.Schwartz@nasa.gov, added added a bit more for STIX RATE files but still using HESSI where
 ; we should have STIX named procs
 ; 21-Mar-2019, Kim. Added SMM GRS input file option
+\; 19-Jan-2023, Brendan. Added logic in set method to set strategy for MinXSS and DAXSS for FITS and .sav specfiles
 ; 19-Jan-2023, Kim. In plot_setup method, added call to get_time_plot_args, and if any added them to plot_params struct
 ;-
 ;---------------------------------------------------------------------------

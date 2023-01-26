@@ -37,7 +37,7 @@
 ; 27-Sep-2016, Richard.Schwartz@nasa.gov, added SPEX_STIX_IMAGE for STIX image cube
 ; 24-Aug-2017, Kim. Changed konus availability to 2012 - present.
 ; 21-Mar-2019, Kim. Added SMM GRS
-; 31-Oct-2022, Brendan added MinXSS (s now has 15 elements)
+; 19-Jan-2023, Brendan. Added MinXSS and DAXSS
 ;-
 function spex_datatypes, input, class=class
 

@@ -1,4 +1,5 @@
-; This file contains spex_daxss_specfile's read_data method and a few helpers
+; This file contains spex_daxss_specfile's read_data method and a few helpers.
+; Jan 26: needs some more testing before upload to SSW
 
 ; Based on minxss_x123_level1_make_ospex_structure
 ; Just reformats the .sav data to be easier to use for OSPEX
