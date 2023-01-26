@@ -51,12 +51,9 @@ function spex_minxss_specfile::format_to_ospex, minxss_data_structure
   ;   add to that the number of seconds between Jan 1 1979 and Jan 6 1980 to finally get UT time edges (which OSPEX needs)
   ; ut_edges is a [2,n_times] array, where [0,m] is the start of the mth time and [1,m] the end
   seconds_between_19790101_19800106 = 60.*60.*24.*(365+5)
-  utc_edges = gps2utc(transpose([[minxss_data_structure.spacecraftgpsformat], $
-    [minxss_data_structure.spacecraftgpsformat + minxss_data_structure.integration_time]]))
   tai_edges = transpose([[minxss_data_structure.tai], $
     [minxss_data_structure.tai + minxss_data_structure.integration_time]])
-  ut_edges2 = anytim(tai_edges, /sec, fiducial='tai')
-  ut_edges = utc_edges + seconds_between_19790101_19800106
+  ut_edges = anytim(tai_edges, /sec, fiducial='tai')
 
   ; I don't know how the previous code handled energy edges. It seems like energy_bin_center_array was passed
   ; in as an array of edges (not of centers) that could just be returned as is. Instead, I'm going to calculate
