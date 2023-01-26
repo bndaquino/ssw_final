@@ -11,12 +11,12 @@ Major changes:
 - Removed dependency on gps2utc
 
 Todo:
+- Add real DAXSS and MinXSS-2 DRMs
+- For the future: Kim will tell us how to set variable DRM paths from GUI/command line
 - Try implementing data download from sockets
 - Consider refactoring MinXSS specfiles into separate ones for MinXSS-1 and MinXSS-2, finding a way to reuse common code
 - Add test files and test data to the repository for testing on other machines
-- Add real DAXSS and MinXSS-2 DRMs
 - Add compare_bins's way of computing energy bins to spex_minxss_specfile's format_to_ospex method (even though the naive way seems to be working)
-- For the future: Kim will tell us how to set variable DRM paths from GUI/command line
 
 Note:
 - compare_bins included. Not part of SSW, but demonstrates a better way to calculate bin edges from bin centers
