@@ -1,0 +1,44 @@
+DAXSS  28-Feb-2022 - present
+FERMI_GBM  12-Aug-2008 - present
+FERMI_LAT  12-Aug-2008 - present
+KONUS  12-Nov-1994 - present. Flares.
+MESSENGER  ~2004 - 17-Sep-2014, spotty coverage
+MINXSS_1  9-Jun-2016 - 25-Apr-2017
+MINXSS_2  7-Dec-2018 - 5-Jan-2019
+SMM_GRS  19-Feb-1980 - 21-Nov-1989. Flares.
+SMM_HXRBS  19-Feb-1980 - 21-Nov-1989. Flares.
+SOXS  1-Jul-2003 - 2-May-2011
+
+GBM:  Files will be listed in most to least sunward order, unless there is no flare in your time 
+interval.  The four most sunward will be highlighted. b0 and b1 are the higher energy BGO detectors; 
+b0 is always the sunward one. For CSPEC and CTIME data, spectrum files are daily, rsp files are for 
+each solar flare interval. For CTIME data, use the detector response files (.rsp or .rsp2) for 
+CSPEC.
+
+LAT:  Spectrum files are daily, rsp files are for each exposure. Select both for your time interval.
+
+KONUS-WIND: Files are for flare intervals. 2012 - ~present are available. The ..._1.pha and 
+..._1.rmf files cover 20-1250 keV, ..._2.pha and ..._2.rmf cover 0.25-15.8 MeV. If files 
+named..._1_bg.pha and ..._2_bg.pha exist, they contain the background for the corresponding pha file 
+(it will be appended to data automatically). You need to copy all of the pha, rmf, and arf files. 
+The pha file will be set as input in OSPEX, the corresponding rmf and arf file will be read 
+automatically, and the response information inserted directly into the ospex object. You don't need 
+to set a response file.  See http://www.ioffe.ru/LEA/kwsun/ for usage policy.
+
+MESSENGER:  You need the .dat and .lbl files for each day. Only the .dat file will be listed in the 
+Select Input widget.  The .lbl file must be in the same directory as the .dat file. The response 
+matrix is computed - there is no response file.
+
+GRS:    FD files are flare data. DB, DA files are day before and day after for background. 
+Background save files have been created from the DB, DA files for you - use the o->grs_bk_from_save 
+method (or button on Background widget) to automatically find the save file corresponding to the 
+input FD file, and set the background from the save file into OSPEX .  Not all flares have a 
+background save file usually because there was not enough overlapping data in the FD, DB, DA files. 
+The response matrix is computed - there is no response file.
+
+HXRBS:  Files are for flare intervals.  The response matrix is computed - there is no response file.
+
+SOXS:  You need the .les file.  The response matrix is computed - there is no response file. CZT 
+and Si data are in same file. After selecting file, a popup will allow you to choose CZT or Si.
+
+MinXSS-1, MinXSS-2 and DAXSS: The data will be either a .sav or .fits file which can be found on the MinXSS data website (https://lasp.colorado.edu/home/minxss/data/) or a similar location. Please verify with the MinXSS/DAXSS Teams. The response matrices are included in ssw and on the MinXSS website. Currently, OSPEX will only display the MinXSS/DAXSS data in the plotman display when NOT in histogram mode. 
