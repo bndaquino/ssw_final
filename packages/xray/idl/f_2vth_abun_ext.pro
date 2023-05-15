@@ -7,7 +7,7 @@
 ;   as differential spectrum seen at Earth in units of photon/(cm2 s keV).
 ;   Input to f_2vth_abun includes two pairs of emission measure and temperature, but only one
 ;   set of abundance values.
-;   Same as f_2vth except relative abundances for all low-fip elements are controlled by
+;   Same as f_2vth except relative abundances of Fe, Ni, and Mg are controlled by
 ;   separate parameters.
 ;
 ;CATEGORY:

@@ -1,0 +1,2 @@
+Temporary file for DAXSS DRM .fits file
+DRM FILE GOES IN THIS FOLDER

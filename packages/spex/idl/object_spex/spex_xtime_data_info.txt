@@ -41,4 +41,5 @@ HXRBS:  Files are for flare intervals.  The response matrix is computed - there 
 SOXS:  You need the .les file.  The response matrix is computed - there is no response file. CZT 
 and Si data are in same file. After selecting file, a popup will allow you to choose CZT or Si.
 
-MinXSS-1, MinXSS-2 and DAXSS: The data will be either a .sav or .fits file which can be found on the MinXSS data website (https://lasp.colorado.edu/home/minxss/data/) or a similar location. Please verify with the MinXSS/DAXSS Teams. The response matrices are included in ssw and on the MinXSS website. Currently, OSPEX will only display the MinXSS/DAXSS data in the plotman display when NOT in histogram mode. 
+MinXSS-1, MinXSS-2 and DAXSS: The data will be either a .sav or .fits file which can be found on the MinXSS data website (https://lasp.colorado.edu/home/minxss/data/) or a similar location. Use calibrated Level 1+ data. Please verify with the MinXSS/DAXSS Teams.  The response matrices are included in ssw and on the MinXSS website. Currently, OSPEX will only display the MinXSS/DAXSS data in the plotman display when NOT in histogram mode. 
+S
