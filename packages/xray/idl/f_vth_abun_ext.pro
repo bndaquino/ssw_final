@@ -4,7 +4,7 @@
 ;PURPOSE:
 ;   This function returns the optically thin thermal bremsstrahlung radiation function
 ;   as differential spectrum seen at Earth in units of photon/(cm2 s keV)
-;   Same as f_vth except relative abundance for all low-fip elements are controlled by
+;   Same as f_vth except relative abundances of Fe, Ni, and Mg are controlled by
 ;   separate parameters.
 ;
 ;CATEGORY:

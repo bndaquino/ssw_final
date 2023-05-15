@@ -78,7 +78,7 @@ end
 
 function spex_daxss_specfile::get_daxss_drm
   ; How will OSPEX get this path? Where does the path go when I call o->set, spex_drmfile?
-;  path = '~/data/daxss/minxss_fm3_ARF.fits'
+;  path = '~/packages/spex/idl/object_spex/minxssresp/minxss_fm3_ARF.fits'
 ;  drm = mrdfits(path, 1)
 ;  
 ;  min_energy_kev = 0.3

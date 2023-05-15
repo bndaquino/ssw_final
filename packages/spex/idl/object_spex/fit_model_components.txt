@@ -87,7 +87,9 @@
 ;  30-Nov-2017, Kim. Added poly
 ;  13-Feb-2018, Kim. The nodrm and asym functions did not show the correct comp name on the seconds line (e.g. 1pow_nodrm
 ;                    had just 1pow on second longer description line)
-;  22-Nov-2022, Christopher S. Moore. Added vth_abun_ext and 2vth_abun_ext to accommodate MinXSS-1, MinXSS-2, DAXSS, and other soft X-ray spectrometers;                                                                                                                   
+;  22-Nov-2022, Christopher S. Moore. Added vth_abun_ext and 2vth_abun_ext to accommodate MinXSS-1, MinXSS-2, DAXSS, and 
+;                                     other soft X-ray spectrometers. The _ext files are the same as vth_abun and 2vth_abun 
+;                                      except relative abundances of Fe, Ni, and Mg are controlled by separate parameters
 ;--------------------------------------------------------------------------------                                   
                                                                                                                     
 1pow - Single Power Law                                                                                             
@@ -639,7 +641,7 @@ vth_abun - Variable Thermal, Separate Abundances
 vth_abun_ext - Variable Thermal, Separate Abundances                                                                    
   vth_abun - Optically thin thermal bremsstrahlung radiation function                                               
   as differential spectrum seen at Earth in units of photon/(cm2 s keV)                                             
-  with separate parameters for relative abundance for Fe/Ni, Ca, S, Mg, Si                                              
+  with separate parameters for relative abundance for Fe, Ca, S, Mg, Si, Ar, Ni                                              
   Valid for temperatures between .086 and 8.6 keV.                                                                  
    a[0] - Emission measure, 10^49 cm^(-3)                                                                           
    a[1] - KT, plasma temperature (keV)                                                                              
@@ -679,7 +681,7 @@ vth_abun_ext - Variable Thermal, Separate Abundances
 2vth_abun_ext - Sum of two Variable Thermals, Separate Abundances                         
  2vth_abun - Two optically thin thermal bremsstrahlung radiation functions                                                     
  as differential spectrum seen at Earth in units of photon/(cm2 s keV)                                              
- with separate parameters for relative abundance for Fe/Ni, Ca, S, Mg, Si
+ with separate parameters for relative abundance for Fe, Ca, S, Mg, Si, Ar, Ni
  Valid for temperatures between .086 and 8.6 keV.                                                                   
    a[0] - First Emission measure, 10^49 cm^(-3)                                                                           
    a[1] - First KT, plasma temperature (keV)                                                                              
